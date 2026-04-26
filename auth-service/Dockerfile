@@ -6,5 +6,5 @@ USER pharma
 EXPOSE 8081
 # Launch supplier/auth/catalog microservice as Spring Boot executable JAR
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","app.jar"]
-#Auth Service
+#Auth Service test
 
