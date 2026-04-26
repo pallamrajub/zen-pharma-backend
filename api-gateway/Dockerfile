@@ -1,5 +1,5 @@
 FROM eclipse-temurin:17-jre
-WORKDIR /app
+WORKDIR /app #workingdir
 RUN groupadd -r pharma && useradd -r -g pharma pharma
 COPY target/*.jar app.jar
 USER pharma
