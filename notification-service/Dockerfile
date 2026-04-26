@@ -11,4 +11,5 @@ COPY package.json .
 USER pharma
 EXPOSE 3000
 CMD ["node", "src/index.js"]
+#notification service
 
