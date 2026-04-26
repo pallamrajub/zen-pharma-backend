@@ -4,6 +4,7 @@ RUN groupadd -r pharma && useradd -r -g pharma pharma
 COPY target/*.jar app.jar
 USER pharma
 EXPOSE 8081
-ENTRYPOINT ["java", "-jar", "-Djava.security.egd=file:/dev/./urandom", "app.jar"]
+# Launch supplier/auth/catalog microservice as Spring Boot executable JAR
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","app.jar"]
 #Auth Service
 
