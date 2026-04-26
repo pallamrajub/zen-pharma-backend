@@ -11,4 +11,4 @@ USER pharma
 EXPOSE 8086
 
 # Start Spring Boot microservice
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app/app.jar"]]
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app/app.jar"]
